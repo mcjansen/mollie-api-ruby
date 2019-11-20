@@ -100,7 +100,7 @@ module Mollie
     end
 
     def amount=(amount)
-      @amount = BigDecimal.new(amount.to_s) if amount
+      @amount = BigDecimal(amount.to_s) if amount
     end
 
     def amount_remaining=(amount_remaining)
